@@ -1,0 +1,96 @@
+#include<iostream.h>
+#include<conio.h>
+#include<dos.h>
+#include<graphics.h>
+void main()
+{
+    int gd=DETECT,gm;
+    initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+    int i,j,y=200,y2=350,y3=300,x4=200,x=200,x2=600,x3=240;
+    for(i=3;i>0;i--)
+    {gotoxy(30,10);
+    cout<<i;
+    delay(1000);}
+    gotoxy(30,10);
+    cout<<" ";
+    for(i=0;i<2;i++)
+    {setcolor(15);
+    {
+        line(x,y,x2,y);
+        line(x,y,x,y3);
+        line(x2,y,x2,y2);
+        line(x,y3,x2-100,y3);
+        line(x2,y2,x2-100,y2);
+        line(x2-100,y3,x2-100,y2);
+    }}for(i=598;i>=501;i--)
+     {setcolor(9);
+        line(i,y+2,i,y2-2);}
+    for(i=500;i>202;i--)
+    {setcolor(9);
+    line(i,y+2,i,y3-1);}
+    for(j=1;j<7;j++)
+    {for(i=x4;i<=x3;i++)
+    {setcolor(9);
+        {line(i,y3+2,i,y2);}
+        }x4=x4+50;
+        x3=x3+50;}
+    delay(2000);
+    sound(1500);
+    delay(500);
+    nosound();
+    for(i=598;i>500;i--)
+     {setcolor(0);
+        line(i,y+2,i,y2-2);}
+    for(i=500;i>202;i--)
+    {setcolor(0);
+    line(i,y+2,i,y3-1);}
+    for(i=0;i<=30;i++)
+    {setcolor(12);
+    {
+        line(x,y,x2,y);
+        line(x,y,x,y3);
+        line(x2,y,x2,y2);
+        line(x,y3,x2-100,y3);
+        line(x2,y2,x2-100,y2);
+        line(x2-100,y3,x2-100,y2);
+        sound(3000);
+        delay(100);
+        nosound();}
+        setcolor(15);
+    {
+        line(x,y,x2,y);
+        line(x,y,x,y3);
+        line(x2,y,x2,y2);
+        line(x,y3,x2-100,y3);
+        line(x2,y2,x2-100,y2);
+        line(x2-100,y3,x2-100,y2);
+        sound(2500);
+        delay(100);
+        nosound();}
+
+    }delay(100);
+    for(i=598;i>500;i--)
+    {
+        int s=2000;
+        setcolor(9);
+        line(i,y+2,i,y2-2);
+        delay(1);
+        sound(s);
+        delay(10);
+        nosound();
+        s=s+2;
+    }
+    for(i=500;i>=202;i--)
+    {
+        int s2=2000;
+        setcolor(9);
+        line(i,y+2,i,y3-1);
+        delay(1);
+        sound(s2);
+        delay(10);
+        nosound();
+        s2=s2+1;
+    }
+    getch();
+    closegraph();
+}

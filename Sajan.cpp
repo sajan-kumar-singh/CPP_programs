@@ -1,0 +1,99 @@
+#include<graphics.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+    int gd=DETECT,gm;
+    initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+    int i,j;
+    for(int s1=45;s1<=270;s1++)
+    for(i=25;i<=40;i++)
+    {setcolor(s1/10);
+    arc(300,200,45,s1,i);
+    delay(1);}
+    for(i=25;i<=40;i++)
+    {setcolor(11);
+    arc(300,265,225,90,i);}
+    delay(1000);
+    for(j=0;j<=360;j++)
+    for(i=0;i<=75;i++)
+    {setcolor(0);
+    arc(300,232,0,j,i);}
+    delay(100);
+    int first=300,last=300;
+    for(i=160;i<=320;i++)
+    {setcolor(4);
+    line(first,i,last,i);
+    first--;last++;
+    delay(10);}
+    int ini=300,fin=300;
+    for(i=190;i<=240;i++)
+    {setcolor(15);
+    line(ini,i,fin,i);
+    ini--;fin++;
+    delay(10);}
+    int m=230,n=370;
+    for(i=260;i<=320;i++)
+    {line(m,i,n,i);
+    m--;n++;
+    delay(10);}
+    delay(1000);
+    for(i=470;i>=130;i--)
+    {setcolor(0);
+    line(i,150,i,350);
+    delay(10);
+    setcolor(14);
+    line(i,150,i,170);
+    delay(10);}
+    for(i=470,j=130;i>=390,j<=210;i--,j++)
+    {setcolor(0);
+    line(i,150,i,170);
+    line(j,150,j,170);
+    delay(10);}
+    for(i=290;i<=310;i++)
+    {setcolor(14);
+    line(i,170,i,300);
+    delay(10);}
+    for(i=20;i<=40;i++)
+    {setcolor(14);
+    arc(270,300,180,360,i);
+    delay(10);}
+    delay(1000);
+    first=300;last=300;
+    for(i=150;i<=350;i++)
+    {setcolor(0);
+    line(150,i,450,i);
+    delay(10);
+    setcolor(9);
+    line(first,i,last,i);
+    first--;last++;
+    delay(10);}
+    ini=300;fin=300;
+    for(i=190;i<=240;i++)
+    {setcolor(0);
+    line(ini,i,fin,i);
+    ini--;fin++;
+    delay(10);}
+    m=230;n=370;
+    for(i=260;i<=350;i++)
+    {line(m,i,n,i);
+    m--;n++;
+    delay(10);}
+    for(i=240;i<=260;i++)
+    {line(ini,i,fin,i);
+    ini--;fin++;
+    delay(10);}
+    for(i=100;i<=300;i++)
+    {setcolor(0);
+    line(i,150,i,350);
+    delay(10);}
+    for(i=260;i<=300;i++)
+    {setcolor(5);
+    line(i,150,i,350);
+    delay(10);}
+    for(i=460;i<=500;i++)
+    {setcolor(5);
+    line(i,150,i,350);
+    delay(10);}
+    getch();
+}

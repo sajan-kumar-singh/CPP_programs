@@ -1,0 +1,67 @@
+#include<iostream.h>
+#include<conio.h>
+#include<graphics.h>
+#include<dos.h>
+void main()
+{
+    clrscr();
+    int i;
+    for(i=11;i<=34;i++)
+    {
+        gotoxy(i,5);
+        cout<<"_";
+        delay(200);
+        gotoxy(i,17);
+        cout<<"_";
+        delay(200);
+        gotoxy(i+5,3);
+        cout<<"_";
+        delay(200);
+        gotoxy(i+5,15);
+        cout<<"_";
+        delay(200);
+    }
+    for(i=6;i<=17;i++)
+    {
+        gotoxy(10,i);
+        cout<<"|";
+        delay(200);
+        gotoxy(35,i);
+        cout<<"|";
+        delay(200);
+        gotoxy(15,i-2);
+        cout<<"|";
+        delay(200);
+        gotoxy(40,i-2);
+        cout<<"|";
+        delay(200);
+    }
+        gotoxy(13,4);
+        cout<<"/";
+        delay(500);
+        gotoxy(11,5);
+        cout<<"/";
+        delay(500);
+        gotoxy(38,4);
+        cout<<"/";
+        delay(500);
+        gotoxy(36,5);
+        cout<<"/";
+        delay(500);
+        gotoxy(13,16);
+        cout<<"/";
+        delay(500);
+        gotoxy(11,17);
+        cout<<"/";
+        delay(500);
+        gotoxy(39,16);
+        cout<<"/";
+        delay(500);
+        gotoxy(37,17);
+        cout<<"/";
+        delay(500);
+        gotoxy(25,7);
+        cout<<"SAAJAN";
+    getch();
+}
+
